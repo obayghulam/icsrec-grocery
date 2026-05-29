@@ -1,0 +1,13 @@
+--- a/src/models.py
++++ b/src/models.py
+@@ -- The original KMeans class uses faiss-gpu. On environments where
+@@    faiss-gpu is unavailable (e.g. modern Google Colab with CUDA 12),
+@@    replace these six lines that allocate a GPU faiss index ...
+-        res = faiss.StandardGpuResources()
+-        res.noTempMemory()
+-        cfg = faiss.GpuIndexFlatConfig()
+-        cfg.useFloat16 = False
+-        cfg.device = self.gpu_id
+-        index = faiss.GpuIndexFlatL2(res, hidden_size, cfg)
+@@    ... with this single line that allocates a CPU faiss index:
++        index = faiss.IndexFlatL2(hidden_size)  # CPU fallback

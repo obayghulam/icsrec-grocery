@@ -1,0 +1,8 @@
+--- a/src/main.py
++++ b/src/main.py
+@@ -- Just before the first `parser.add_argument(...)` call, insert the
+@@    new --cluster_method argument so the user can pick between
+@@    the original K-means and our GMM variant from the command line:
++    parser.add_argument("--cluster_method", default="kmeans", type=str,
++                        help="kmeans (original) or gmm (our contribution)")
+     parser.add_argument(...)  # existing arguments follow unchanged

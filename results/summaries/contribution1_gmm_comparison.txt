@@ -1,0 +1,4 @@
+GMM vs K-means (intent_num=128) - final TEST metrics
+method        HIT@5     NDCG@5    HIT@10    NDCG@10   HIT@20    NDCG@20   
+K-means       0.0337    0.0215    0.0531    0.0278    0.0830    0.0352    
+GMM (ours)    0.0319    0.0209    0.0523    0.0274    0.0834    0.0352    

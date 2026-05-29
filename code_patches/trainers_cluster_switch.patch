@@ -1,0 +1,27 @@
+--- a/src/trainers.py
++++ b/src/trainers.py
+@@ -- At the top of trainers.py, find this import line:
+-from models import KMeans
+@@ -- ...and replace it with:
++from models import KMeans, GMM
+
+@@ -- Then find the block that instantiates the cluster object
+@@    (inside the training loop, looks like this):
+-        cluster = KMeans(
+-            num_cluster=args.intent_num,
+-            seed=1,
+-            hidden_size=64,
+-            gpu_id=args.gpu_id,
+-            device=torch.device("cuda"),
+-        )
+@@ -- ...and replace it with this version that picks the cluster class at runtime
+@@    based on the --cluster_method command-line argument:
++        _cluster_method = getattr(args, "cluster_method", "kmeans")
++        _ClusterClass = GMM if _cluster_method == "gmm" else KMeans
++        cluster = _ClusterClass(
++            num_cluster=args.intent_num,
++            seed=1,
++            hidden_size=64,
++            gpu_id=args.gpu_id,
++            device=torch.device("cuda"),
++        )
