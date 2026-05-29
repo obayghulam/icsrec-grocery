@@ -21,13 +21,11 @@ We reproduce ICSRec on a domain it was not originally tested on (Amazon grocery)
 
 ---
 
-## Team
+## Authors
 
-| Author | Email |
-|---|---|---|
-| Obay R. Ghulam      | 2240497@uj.edu.sa |
-| Eyad A. Alghamdi    | 2240059@uj.edu.sa | 
-| Abdulaziz F. Etaiwi | 2140040@uj.edu.sa |
+- Obay R. Ghulam  2240497@uj.edu.sa 
+- Eyad A. Alghamdi  2240059@uj.edu.sa 
+- Abdulaziz F. Etaiwi  2140040@uj.edu.sa
 
 
 **University of Jeddah
