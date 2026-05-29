@@ -23,15 +23,16 @@ We reproduce ICSRec on a domain it was not originally tested on (Amazon grocery)
 
 ## Team
 
-| Author | Student ID | Primary role |
+| Author | Email |
 |---|---|---|
-| Obay R. Ghulam      | 2240497 | Data preprocessing + baseline training |
-| Eyad A. Alghamdi    | 2240059 | Hyperparameter tuning + GMM contribution |
-| Abdulaziz F. Etaiwi | 2140040 | Cold-start analysis + report writing |
+| Obay R. Ghulam      | 2240497@uj.edu.sa |
+| Eyad A. Alghamdi    | 2240059@uj.edu.sa | 
+| Abdulaziz F. Etaiwi | 2140040@uj.edu.sa |
 
-All three members contributed jointly to every part of the project. The roles above are nominal leads only.
 
-**Instructor:** Dr. Mohamed Hamed Mousa.
+**University of Jeddah
+College of Computer Science and Engineering
+Department of Computer Science and Artificial Intelligence** 
 
 ---
 
