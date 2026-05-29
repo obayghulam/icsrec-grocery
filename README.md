@@ -214,8 +214,6 @@ If you build on this work, please cite the original ICSRec paper and the Amazon 
 
 - The authors of the original ICSRec paper for releasing their code openly.
 - The McAuley Lab at UC San Diego for the Amazon Reviews 2023 dataset.
-- Google Colab Pro for the A100 GPU compute used in our experiments.
-- Our instructor, Dr. Mohamed Hamed Mousa, for guidance throughout the project.
 
 ## License
 
